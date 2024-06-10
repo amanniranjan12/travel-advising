@@ -1,1 +1,459 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:whitesmoke;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+}
+
+.ul1 {
+    display: flex;
+    list-style: none;
+}
+
+.ul1 li {
+    margin: 0 20px;
+}
+
+.ul1 li a {
+    text-decoration: none;
+    font-size: 21px;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.ul1 li a:hover {
+    border-bottom: 2px solid black;
+}
+
+
+
+.divsearch {
+    display: flex;
+    position: relative;
+    border: none;
+    border-style: none;
+    margin: 22px 20px;
+    height: 30px;
+    width: 330px;
+    background-color: rgba(222, 220, 209, 0.873);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.search {
+    width: 330px;
+    padding: 5px 40px 5px 10px; /* Adjusted padding to accommodate the icon */
+    border: none;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent; /* Changed background color to transparent */
+}
+
+#searchicon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    cursor: pointer;
+}
+
+.img1 {
+    width: 35px;
+    height: 35px;
+    margin: 20px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Header Section */
+.div2 {
+    width: 85%;
+    margin: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('front.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 8px rgb(42, 45, 45);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.timeto {
+    font-size: 2rem;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.travel {
+    font-size: 4rem;
+    letter-spacing: 7px;
+    opacity: 0.6;
+}
+
+.div3 {
+    display: flex;
+    justify-content: center;
+    margin: 90px 0 50px 0;
+    margin-bottom: 45px;
+}
+
+.whereto {
+    font-size: 3rem;
+    color: black;
+}
+
+/* Locations Section */
+.toplocation {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 45px 45px 45px 45px;
+    
+}
+
+.location1, .location2 {
+    position: relative;
+    width: 45%;
+    height: 360px;
+    overflow: hidden;
+    box-shadow: 2px 2px 3px 1px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.location1::before, .location2::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease;
+}
+
+.location1::before {
+    background-image: url('mumbai.jpg');
+}
+
+.location2::before {
+    background-image: url('delhi.jpg');
+}
+
+.location1:hover::before, .location2:hover::before {
+    transform: scale(1.2);
+}
+
+.mumbaitext, .delhitext {
+    position: relative;
+    color: whitesmoke;
+    font-size: 2rem;
+    margin: 12px;
+    align-self: flex-end;
+}
+
+/* Hotels Section */
+.hotel {
+     
+    text-align: center;
+    margin: 45px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    background-color: aliceblue;
+
+}
+.hotelheader{
+
+    margin-bottom: 35px;
+}
+.hotelheading{
+    margin-bottom: 13px;
+}
+.hoteltype {
+    display: flex;
+    justify-content: start; 
+    flex-wrap: wrap; 
+    margin-left: 45px;
+    gap: 20px; 
+}
+
+.hotel1, .hotel2, .hotel3 {
+    position: relative;
+    display: flex;
+    width: 300px;
+    height: 270px;
+    overflow: hidden;
+    box-shadow: 2px 2px 3px 1px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.hotel1::before, .hotel2::before, .hotel3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    transition: transform 0.4s ease;
+}
+
+.hotel1::before {
+    background-image: url('hotel1.jpg');
+}
+
+.hotel2::before {
+    background-image: url('luxuryhotel.jpg');
+}
+
+.hotel3::before {
+    background-image: url('familyhotel.jpg');
+}
+
+.hotel1:hover::before, .hotel2:hover::before, .hotel3:hover::before {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+.tophotel, .luxuryhotels, .familyhotel {
+    position: relative;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin: 12px;
+    justify-self: start;
+    align-self: end;
+}
+
+.faq {
+    width: 85%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.faq-header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #555;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .faq-header {
+        font-size: 1.5rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .faq-answer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-header {
+        font-size: 1.2rem;
+    }
+
+    .faq-question {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    .faq-answer p {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 20px;
+}
+
+.footer-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.footer-section p, .footer-section ul {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #FFD700;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .logo, .img1 {
+        margin: 10px;
+    }
+
+    .ul1 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .ul1 li {
+        margin: 10px 0;
+    }
+
+    .divsearch {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .div2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .timeto {
+        font-size: 1.5rem;
+    }
+
+    .travel {
+        font-size: 3rem;
+    }
+
+    .location1, .location2 {
+        width: 100%;
+    }
+
+    .hoteltype {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whereto {
+        font-size: 2rem;
+    }
+
+    .mumbaitext, .delhitext {
+        font-size: 1.5rem;
+    }
+
+    .tophotel, .luxuryhotels {
+        font-size: 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+}
+
