@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Advising</title>
+    <link rel="shortcut icon" href="logo.png" >
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
+    
+
+<body>
+    <div class="div1">
+        <nav>
+             <span>
+                <img src="logo.png" alt="" class="logo">
+             </span>
+            <div class="divlist">
+                <ul class="ul1">
+                    <li> <a href="#">Discover</a> </li>
+                    <li> <a href="#">Trip</a></li>
+                    <li> <a href="#">More</a></li>
+                    <li> <a href="#">Review </a></li>
+                </ul>
+            </div>
+            <div class="divsearch">
+            <form class="form1">
+                <input type="text" class="search" placeholder="Places to go, things to do,hotels...">
+                
+            </form>
+            <i id="searchicon" class="fa fa-search"></i>
+            
+            </div>
+            <img class="img1" src="profile.jpg" alt="Profile">
+            <!-- <span class="profile2">Profile</span> -->
+
+        </nav>
+
+    </div>
+    
+    <div id="div2" class="div2">
+        <div class="divpartition">
+            
+                <h3 class="timeto">It's time to</h3>
+                <h2 class="travel">TRAVEL</h2>
+
+        </div>
+        
+    </div>
+
+    <div class="div3">
+        <h1 class="whereto" > Where to?</h1>
+    </div>
+
+    <div class="toplocation">
+        <h2 class="locationheader">
+            <u>Top Locations:</u>
+        </h2>
+    </div>
+    <div class="location">
+
+        <div class="location1">  
+            <h2 class="mumbaitext">Mumbai</h2>
+        </div>
+
+        <div class="location2">
+            <h2 class="delhitext">Delhi</h2>
+        </div>
+
+    </div>
+
+    <div class="hotel">
+        <div class="hotelheader">
+            <h2 class="hotelheading">
+                <u>Discover the ultimate stay:</u>
+            </h2>
+            <span>2024 Top Hotels Class</span>
+        </div> 
+
+        <div class="hoteltype">
+            <div class="hotel1">
+                <p class="tophotel"> Top Hotels </p>
+            </div>
+            <div class="hotel2">
+                <p class="luxuryhotels">Luxury Hotels</p>
+            </div>
+            <div class="hotel3">
+                <p class="familyhotel">Family Friendly Hotels</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="faq">
+        <h2 class="faq-header">Frequently Asked Questions</h2>
+    
+        <details class="faq-item">
+            <summary class="faq-question">What destinations do you cover?</summary>
+            <div class="faq-answer">
+                <p>We cover a wide range of destinations around the world, from popular tourist spots to off-the-beaten-path locations.</p>
+            </div>
+        </details>
+    
+        <details class="faq-item">
+            <summary class="faq-question">How can I book a trip?</summary>
+            <div class="faq-answer">
+                <p>Booking a trip is easy! Simply browse through our website, select your desired destination, and follow the booking instructions provided.</p>
+            </div>
+        </details>
+    
+        <details class="faq-item">
+            <summary class="faq-question">Are there any discounts available?</summary>
+            <div class="faq-answer">
+                <p>Yes, we offer discounts and special deals on various trips throughout the year. Keep an eye on our website for the latest offers.</p>
+            </div>
+        </details>
+    
+        <!-- Add more FAQ items as needed -->
+    
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Explore</h2>
+                <ul>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Travel Guides</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Deals</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Contact</h2>
+                <p>Email: contact@tripadvising.com</p>
+                <p>Phone: +1234567890</p>
+            </div>
+            <div class="footer-section">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Trip Advising. All rights reserved.
+        </div>
+    </footer>
